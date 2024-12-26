@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 #root {
   width: 100vw;
   height: 100vh;
@@ -9,3 +10,11 @@
 body {
   margin: 0;
 }
+
+html, body {
+  overscroll-behavior: none; /* Prevent the bounce effect on mobile */
+  -webkit-text-size-adjust: none; /* Disable automatic text resizing */
+  min-height: 100%; 
+  -webkit-overflow-scrolling: none;
+}
+

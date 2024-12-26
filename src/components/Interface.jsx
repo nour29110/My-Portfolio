@@ -54,7 +54,7 @@ const Section = (props) => {
           <span className="bg-gray-100 px-1 italic">Mohamad Nour Alhendi</span>
         </h1>
         <motion.p
-          className="text-lg font-medium text-black mt-4"
+          className="text-base md:text-lg font-medium text-black mt-4"
           initial={{
             opacity: 0,
             y: 25,
@@ -75,7 +75,7 @@ const Section = (props) => {
         <motion.button
           onClick={() => setSection(3)}
           className={`bg-black text-white py-3.5 px-7 
-        rounded-lg font-bold text-lg mt-4 md:mt-16`}
+        rounded-lg font-bold text-base md:text-lg mt-4 md:mt-16`}
           initial={{
             opacity: 0,
             y: 25,
