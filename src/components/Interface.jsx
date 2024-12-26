@@ -51,10 +51,10 @@ const Section = (props) => {
         <h1 className="text-3xl md:text-4xl font-extrabold leading-snug mt-8 md:mt-0">
           Hi, I'm
           <br />
-          <span className="bg-white px-1 italic">Mohamad Nour Alhendi</span>
+          <span className="bg-gray-100 px-1 italic">Mohamad Nour Alhendi</span>
         </h1>
         <motion.p
-          className="text-lg text-gray-900 mt-4"
+          className="text-lg font-medium text-black mt-4"
           initial={{
             opacity: 0,
             y: 25,
@@ -68,13 +68,13 @@ const Section = (props) => {
             delay: 1,
           }}
         >
-          I'm a Computer Science Student at 
+          Computer Science Student at 
           <br />
           Florida State University
         </motion.p>
         <motion.button
           onClick={() => setSection(3)}
-          className={`bg-black text-white py-4 px-8 
+          className={`bg-black text-white py-3.5 px-7 
         rounded-lg font-bold text-lg mt-4 md:mt-16`}
           initial={{
             opacity: 0,
@@ -86,7 +86,7 @@ const Section = (props) => {
           }}
           transition={{
             duration: 1,
-            delay: 2,
+            delay: 1.5,
           }}
         >
           Contact me
@@ -156,7 +156,7 @@ const Section = (props) => {
                 </motion.h3>
                 <div className="h-2 w-full bg-gray-200 rounded-full mt-1">
                   <motion.div
-                    className="h-full bg-indigo-500 rounded-full "
+                    className="h-full bg-green-600 rounded-full "
                     style={{ width: `${skill.level}%` }}
                     initial={{
                       scaleX: 0,
@@ -200,7 +200,7 @@ const Section = (props) => {
                   </motion.h3>
                   <div className="h-2 w-full bg-gray-200 rounded-full mt-2">
                     <motion.div
-                      className="h-full bg-indigo-500 rounded-full "
+                      className="h-full bg-green-600 rounded-full "
                       style={{ width: `${lng.level}%` }}
                       initial={{
                         scaleX: 0,

@@ -45,7 +45,7 @@ export const Experience = (props) => {
     setCharacterAnimation("Falling");
     setTimeout(() => {
       setCharacterAnimation(section === 0 ? "Typing" : "Standing");
-    }, 400);
+    }, 500);
   }, [menuOpened, section]);
 
   const characterGroup = useRef();
@@ -151,7 +151,7 @@ export const Experience = (props) => {
         <Float>
           <mesh position={[1, -3, -15]} scale={[2, 2, 2]}>
             <MeshDistortMaterial
-              opacity={0.8}
+              opacity={0.5}
               transparent
               distort={0.4}
               speed={4}
@@ -163,7 +163,7 @@ export const Experience = (props) => {
           <mesh scale={[1, 1, 1]} position={[1.5, -5, -18]}>
             <sphereGeometry />
             <MeshDistortMaterial
-              opacity={0.8}
+              opacity={0.5}
               transparent
               distort={1}
               speed={5}
@@ -175,7 +175,7 @@ export const Experience = (props) => {
           <mesh scale={[1, 1, 1]} position={[-2.5, -3, -11]}>
             <sphereGeometry />
             <MeshWobbleMaterial
-              opacity={0.8}
+              opacity={0.4}
               transparent
               distort={1}
               speed={5}

@@ -40,13 +40,13 @@ export function Avatar(props) {
       group.current.getObjectByName("Head").lookAt(state.camera.position);
     }
     if (cursorFollow) {
-      const target = new THREE.Vector3(state.mouse.x, state.mouse.y, 1);
+      const target = new THREE.Vector3(state.pointer.x, state.pointer.y, 1);
       group.current.getObjectByName("Spine2").lookAt(target);
     }
   });
 
   useEffect(() => {
-    actions[animation].reset().fadeIn(0.5).play();
+    actions[animation].reset().fadeIn(0.3).play();
     return () => {
       actions[animation].reset().fadeOut(0.5);
     };
