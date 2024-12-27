@@ -14,7 +14,7 @@ The website is fully responsive, providing a seamless user experience across dev
 
 <img src="github-pics/Responsive.png" width="250" />  
 
-## Final Portfolio  
+## Portfolio  
 The portfolio features a custom animated avatar resembling me, along with interactive 3D elements and a professional design.
 
 <img src="github-pics/Portfolio.png" width="450" />  
